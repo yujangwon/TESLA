@@ -6,12 +6,11 @@
 }
 
 .footer ul {
-  max-width: 600px;
+  width: 80%;
   margin: 2rem auto;
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
-  
+  flex-wrap: wrap;  
 }
 
 .footer ul li {
@@ -26,20 +25,19 @@
   font-size: 1rem;
 }
 
-.footer div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.footer div p {
-  max-width: 600px;
+.footer ul p {
+  width: 80%;
   color: whitesmoke;
   text-align: center;
+  line-height: 2rem;
 }
 
-.footer div p a {
+.footer ul p a {
   color : inherit;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  border-bottom :1px solid;
+}
+
+.footer ul p a:hover {
+  border-bottom :2px solid;
 }

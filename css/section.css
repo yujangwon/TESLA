@@ -44,12 +44,19 @@
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+
+  animation-name: slideup;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .section_content_subtitle {
   font-size: 1.5rem;
   font-weight: 500;
   
+  animation-name: slideup;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 .section_content_subtitle a {
@@ -88,9 +95,77 @@
 .action_btn_primary {
   background: rgba(23, 26, 42, 0.8);
   color: white;
+
+  animation-name: slideleft;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .action_btn_secondary {
   background: rgba(255, 255, 255, 0.65);
   color: var(--primary-color);
+
+  animation-name: slideright;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.action_btn_end {
+  background: rgba(23, 26, 42, 0.8);
+  color: white;
+
+  animation-name: slidedown;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+
+/* 슬라이드 업 애니메이션*/
+@keyframes slideup {
+  from {
+    opacity: 0%;
+    transform:translateY(100%);
+  }
+
+  to {
+    opacity: 100%;
+    transform:translateY(0%);
+  }
+}
+
+@keyframes slideleft {
+  from {
+    opacity: 0%;
+    transform:translatex(-100%);
+  }
+
+  to {
+    opacity: 100%;
+    transform:translatex(0%);
+  }
+}
+
+
+@keyframes slideright {
+  from {
+    opacity: 0%;
+    transform:translatex(100%);
+  }
+
+  to {
+    opacity: 100%;
+    transform:translatex(0%);
+  }
+}
+
+@keyframes slidedown {
+  from {
+    opacity: 0%;
+    transform:translateY(-100%);
+  }
+
+  to {
+    opacity: 100%;
+    transform:translateY(0%);
+  }
 }
