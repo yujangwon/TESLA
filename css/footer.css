@@ -1,0 +1,45 @@
+.footer {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer ul {
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  
+}
+
+.footer ul li {
+  margin: 0 1rem;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.footer ul li a {
+  color: whitesmoke;
+  font-size: 1rem;
+}
+
+.footer div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer div p {
+  max-width: 600px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.footer div p a {
+  color : inherit;
+  text-decoration: underline;
+}
