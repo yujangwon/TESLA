@@ -63,7 +63,7 @@
   animation-name : header_nav_ani;
   animation-duration: 0.5s;
   animation-iteration-count: initial;
-  animation-fill-mode: none;
+  animation-fill-mode: forwards;
   animation-direction: normal;
 }
 
